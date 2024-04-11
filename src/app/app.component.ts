@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ACDemo';
+
+  btnClicked($event: any) {
+    console.log($event)
+    alert('button clicked')
+  }
 }

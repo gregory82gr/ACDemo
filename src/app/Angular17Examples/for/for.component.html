@@ -1,0 +1,11 @@
+<ul>
+    @for (course of courses; track  trackCourse;let index = $index) {
+    <li>{{ course.id }}</li>
+    <li>{{ index }}: {{ course.name }}</li>
+    <li>{{ course.name }}</li>
+    <br>
+    }
+    @empty {
+        <li>No courses found</li>
+        }
+</ul>
